@@ -63,22 +63,25 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Controller\Controller.cs" />
     <Compile Include="Assets\Scripts\Controller\KeyboardController.cs" />
+    <Compile Include="Assets\Scripts\Entity\EnemyManagement.cs" />
     <Compile Include="Assets\Scripts\Entity\Entity.cs" />
     <Compile Include="Assets\Scripts\Entity\MovableEntity\Avatar.cs" />
     <Compile Include="Assets\Scripts\Entity\MovableEntity\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Entity\MovableEntity\Enemy\EnemyOne.cs" />
+    <Compile Include="Assets\Scripts\Entity\MovableEntity\Missile.cs" />
     <Compile Include="Assets\Scripts\Entity\MovableEntity\MovableEntity.cs" />
     <None Include="Assets\Extras\SpritePack\README.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Atents/Desktop/UNITY2DPRO1/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Atents/Documents/GitHub/Unity_A/UNITY2DPRO1/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Atents/Desktop/UNITY2DPRO1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Atents/Documents/GitHub/Unity_A/UNITY2DPRO1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Atents/Desktop/UNITY2DPRO1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Atents/Documents/GitHub/Unity_A/UNITY2DPRO1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Atents/Desktop/UNITY2DPRO1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Atents/Documents/GitHub/Unity_A/UNITY2DPRO1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

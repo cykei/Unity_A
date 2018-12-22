@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour {
     protected Vector2 _dir = Vector2.zero;
-    bool isShoot = false;
+    protected bool isShoot = false;
 
     // Use this for initialization
     void Start () {
