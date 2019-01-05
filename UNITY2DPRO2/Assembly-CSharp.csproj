@@ -61,6 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Character.cs" />
+    <Compile Include="Assets\Mob.cs" />
+    <Compile Include="Assets\MousePicking.cs" />
     <Compile Include="Assets\Scripts\Controller\Controller.cs" />
     <Compile Include="Assets\Scripts\Controller\KeyboardController.cs" />
     <Compile Include="Assets\Scripts\Dispatcher\CollisionDispatcher.cs" />
