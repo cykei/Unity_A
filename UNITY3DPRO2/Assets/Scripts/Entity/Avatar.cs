@@ -28,13 +28,25 @@ public class Avatar : Entity {
     {
         Animator animator = GetComponent<Animator>();
         if (animator == null) return; // 안전한 코드를 위해서
-        if (!_dir.Equals(Vector3.zero))
+
+        if (controller.IsAttack())
+        {
+            Debug.Log("you pressed button");
+            animator.SetBool("attacking", true);
+            animator.SetBool("walking", false);
+
+            controller.DisableAttack();
+            // 한번 어택하면 정지
+        }
+        else if (!_dir.Equals(Vector3.zero))
         {
             //즉, 움직이고 있으면
+            animator.SetBool("attacking", false);
             animator.SetBool("walking", true);
         }
         else
         {
+            animator.SetBool("attacking", false);
             animator.SetBool("walking", false);
         }
     }

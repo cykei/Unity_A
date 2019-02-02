@@ -22,8 +22,14 @@ public class Controller : MonoBehaviour {
         return _dir;
     }
 
-    public void onAttack()
+
+    public bool IsAttack()
     {
-        isAttack = true;
+        return isAttack;
+    }
+
+    public void DisableAttack()
+    {
+        isAttack = false;
     }
 }

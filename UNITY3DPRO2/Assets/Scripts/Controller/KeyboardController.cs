@@ -34,4 +34,11 @@ public class KeyboardController : Controller {
         }
     }
 
+    public void onAttack()
+    {
+        // 왜 굳이 여기다가? 그냥 Controller에서 만들어줘도 되는거 아닌지
+        // 아지금 Controller객체에 붙어있는게 KeyboardController임ㅋㅋㅋ
+        isAttack = true;
+    }
+
 }
