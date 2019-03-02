@@ -34,15 +34,26 @@ public class EffectManager : MonoBehaviour {
         //if(collee!=coller) 
         if (!collee.tag.Equals(coller.tag))
         {
-            GameObject ef = Instantiate(attackEffect, collee.transform);
-            StartCoroutine("RemoveEffect", ef);
+            //GameObject ef = Instantiate(attackEffect, collee.transform);
+            // 오브젝트 풀 이용 버전
+            GameObject ef = ObjectPoolManager.instance.GetItem("AttackEffect");
+            ef.transform.position = collee.transform.position;
+            //StartCoroutine("RemoveEffect", ef);
+            StartCoroutine("ReleaseEffect", ef);
         }
         
+    }
+
+    IEnumerator ReleaseEffect(GameObject effect)
+    {
+        yield return new WaitForSeconds(1.0f);
+        ObjectPoolManager.instance.ReleaseItem("AttackEffect", effect);
     }
 
     IEnumerator RemoveEffect(GameObject effect)
     {
         yield return new WaitForSeconds(1.0f);
+        ObjectPoolManager.instance.ReleaseItem(effect.name, effect);
 
         Destroy(effect);
     }

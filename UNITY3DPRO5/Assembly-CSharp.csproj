@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\FSM\State\BehaviorStateIdle.cs" />
     <Compile Include="Assets\Scripts\FSM\State\BehaviorStateTrace.cs" />
     <Compile Include="Assets\Scripts\Generator\EnemyGenerator.cs" />
+    <Compile Include="Assets\Scripts\ObjectPoolManager.cs" />
     <Compile Include="Assets\Scripts\UI\UI_hp_bar.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Atents/Documents/GitHub/Unity_A/UNITY3DPRO5/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

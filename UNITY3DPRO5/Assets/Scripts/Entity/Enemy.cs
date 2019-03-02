@@ -5,9 +5,10 @@ using UnityEngine;
 public class Enemy : Entity {
 
     private EnemyFSM enemyFSM;
+    public GameObject namePlate;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         enemyFSM = GetComponent<EnemyFSM>();
         bv = new BattleValue(50, 5, 1);
 	}
@@ -21,4 +22,10 @@ public class Enemy : Entity {
     //{
     //    transform.parent.Translate(_dir.normalized * speed * Time.deltaTime);
     //}
+    void GenerateNamePlate()
+    {
+        GameObject nameP = Instantiate(namePlate);
+        nameP.SetActive(true);
+
+    }
 }
